@@ -81,6 +81,7 @@ if __name__ == '__main__':
     print(slope)
     rotated_image = rotate_image(low_noise_img, (slope*180)/math.pi)
 
+    cv2.imwrite('mr_bean_rotated.jpg', rotated_image)
     cv2.imshow('out', rotated_image)
     cv2.waitKey()
 
